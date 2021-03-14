@@ -111,3 +111,4 @@ function slideShow() {
     hideShowArrow(slides, prevBtn, nextBtn, prevIndex);
   }
 }
+

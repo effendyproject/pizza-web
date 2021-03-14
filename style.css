@@ -1,7 +1,12 @@
 :root {
     --red: #db2035;
     --yellow: #fedf15;
-    --white: #f1f1f1;
+    --white: #fdfbfb;
+}
+
+html {
+    scroll-behavior: smooth;
+    background-color: var(--white);
 }
 
 * {
@@ -9,6 +14,30 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.btn-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--red);
+    padding: 8px 14px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn-top .fa-arrow-up {
+    color: white;
+    font-size: 18px;
 }
 
 /* Navbar */
@@ -23,9 +52,10 @@
     align-items: center;
 }
 
-.navbar .logo img {
-    width: 60px;
-    height: 60px;
+.navbar .logo {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
 }
 
 .navbar .navbar-collapse {
@@ -49,13 +79,10 @@
 
 .navbar .navbar-nav .nav-item:hover .nav-link {
     text-decoration: underline;
+    cursor: pointer;
 }
 
 /* Home */
-.home {
-    height: 90vh;
-}
-
 .carousel {
     position: relative;
     width: 100%;
@@ -114,11 +141,11 @@
 }
 
 .carousel-btn-left {
-    left: 12px;
+    left: 20px;
 }
 
 .carousel-btn-right {
-    right: 12px;
+    right: 20px;
 }
 
 .carousel-nav {
@@ -152,12 +179,16 @@
 
 /* History */
 .history {
-    height: 100vh;
+    position: relative;
+    padding: 90px 9em;
+}
+
+.history h4 {
+    text-align: justify;
+    color: rgb(131, 131, 131);
+    line-height: 1.6;
 }
 
 .history h4 span {
     padding-left: 3rem;
-}
-
-.title {
 }
